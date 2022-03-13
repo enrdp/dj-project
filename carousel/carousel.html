@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How to use responsive options">
+    <meta name="author" content="David Deutsch">
+    <title>
+      Carousel
+    </title>
+
+    <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/css/docs.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+    <!-- javascript -->
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
+    <style>
+      body,html{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .owl-carousel__container{
+        position: relative;
+      }
+      .owl-carousel{
+      display: flex;
+      background-image: url(./img/homepage-sponsors-background.jpg);
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center center;
+      }
+      .item{
+        opacity: .6;
+        transition: all .3s;
+        max-width: 100%;
+        margin-top: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+      .owl-dots{
+        padding-top: 2rem;
+      }
+        .partner{
+          text-align: center;
+          position: absolute;
+          top: 5%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 2;
+          color: #fff;
+          font-size: 3rem;
+          font-weight: 900;
+        }
+        .itemMarg1 img{
+          margin-top: 1.5rem;
+        }
+        .itemMarg2 img{
+          margin-top: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+            <div class="owl-carousel__container">
+            <h2 class="partner">Partners & Sponsors</h2>
+          <div class="owl-carousel owl-theme owl-carousel_sponsor">
+            <div class="item item1">
+              <img src="./img/logo-inverse-1-143x69.png" alt="" width="143" height="69">
+            </div>
+            <div class="item item2">
+              <img src="./img/logo-inverse-2-117x78.png" alt="" width="117" height="78">
+            </div>
+            <div class="item itemMarg1">
+              <img src="./img/logo-inverse-3-205x36.png" alt="" width="205" height="36">
+            </div>
+            <div class="item itemMarg2">
+              <img src="./img/logo-inverse-4-171x58.png" alt="" width="171" height="58">
+            </div>
+            <div class="item item5">
+              <img src="./img/logo-inverse-1-143x69.png" alt="" width="143" height="69">
+            </div>
+            <div class="item item6">
+              <img src="./img/logo-inverse-2-117x78.png" alt="" width="117" height="78">
+            </div>
+            <div class="item itemMarg1">
+              <img src="./img/logo-inverse-3-205x36.png" alt="" width="205" height="36">
+            </div>
+            <div class="item itemMarg2">
+              <img src="./img/logo-inverse-4-171x58.png" alt="" width="171" height="58">
+            </div>
+          </div>
+        </div>
+          
+          <script>
+            $(document).ready(function() {
+              $('.owl-carousel_sponsor').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true
+                  },
+                  600: {
+                    items: 2,
+                    nav: false
+                  },
+                  1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false,
+                    margin: 10
+                  }
+                }
+              })
+            })
+          </script>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- vendors -->
+    <script src="./assets/vendors/highlight.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

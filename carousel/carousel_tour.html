@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How to use responsive options">
+    <meta name="author" content="David Deutsch">
+    <title>
+      Carousel
+    </title>
+
+    <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./assets/css/docs.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./carousel_tour.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- javascript -->
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.js"></script>
+    </head>
+
+
+<body>
+
+<article class="main__tourSchedule">
+  <h2>Tour Schedule</h2>
+  <div class="main__tourSchedule__calendar">
+      <ul class="main__tourSchedule__calendar__list">
+          <a href="#zero" class="button secondary url active_calendar">MARCH</a>
+          <a href="#one" class="button secondary url">APRIL</a>
+          <a href="#two" class="button secondary url">MAY</a>
+      </ul>
+  </div>
+
+  <div class="owl-carousel owl-theme owl-carousel_tour">
+
+  
+    <div class="march main__tourSchedule__news" data-hash="zero">
+      <ul class="news1">
+          <li class="active" id="news1item1" onclick="changeHeight('79%')">
+              <p class="date">March 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item2" onclick="changeHeight('79%')">
+              <p class="date">March 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item3" onclick="changeHeight('79%')">
+              <p class="date">March 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item4" onclick="changeHeight('70%')">
+              <p class="date">March 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+
+
+    <div class="april main__tourSchedule__news" data-hash="one">
+      <ul class="news2">
+          <li class="active" id="news2item1" onclick="changeHeight('79%')">
+              <p class="date">April 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item2" onclick="changeHeight('79%')">
+              <p class="date">April 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item3" onclick="changeHeight('79%')">
+              <p class="date">April 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item4" onclick="changeHeight('70%')">
+              <p class="date">April 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="may main__tourSchedule__news" data-hash="two">
+      <ul class="news3">
+          <li class="active" id="news3item1" onclick="changeHeight('79%')">
+              <p class="date">May 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item2" onclick="changeHeight('79%')">
+              <p class="date">May 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item3" onclick="changeHeight('79%')">
+              <p class="date">May 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item4" onclick="changeHeight('70%')">
+              <p class="date">May 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+ </div>
+
+</article>
+
+<script>
+  $(document).ready(function() {
+    $('.owl-carousel_tour').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      URLhashListener:true,
+      startPosition: 'URLHash',
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 1,
+          nav: true
+        },
+        1000: {
+          items: 1,
+          nav: true,
+          loop: false,
+          
+        }
+      }
+    })
+  })
+</script>
+</div>
+</div>
+</section>
+
+<script src="./carousel_tour.js"></script>
+
+<!-- vendors -->
+<script src="./assets/vendors/highlight.js"></script>
+<script src="./assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+img{
+    max-width: 100%;
+}
+.ImgThumbnail {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.9);
+}
+.modalImage {
+   margin: auto;
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+}
+#caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+.close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+   color: #8121e0;
+   cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+   .modalImage {
+      max-width: 100%;
+      padding-top: 5rem;
+   }
+}
+
+.gallery__img:hover{
+    position: relative;
+}
+.gallery__img:hover .zoom {
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.gallery__img:hover .zoom  {
+    opacity: 1;
+}
+.zoom:hover {
+    cursor: pointer;
+}
+.gallery__img .zoom:hover{
+    box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+.zoom {
+    opacity: 0;
+    color: #343a40;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.zoom:before{
+    content: "Zoom";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 900;
+}
+</style>
+</head>
+<body>
+<h1>Image Modal Gallery Example</h1>
+
+<div class="gallery__img">
+<img class="ImgThumbnail" id="ImgThumbnail" src="./gallery-1-original.jpg"/>
+<div class="zoom" id="zoom1"></div>
+</div>
+
+<div class="gallery__img">
+<img class="ImgThumbnail" id="ImgThumbnail2" src="./gallery-2-original.jpg"/>
+<div class="zoom" id="zoom2"></div>
+</div>
+
+<div class="gallery__img">
+<img class="ImgThumbnail" id="ImgThumbnail3" src="./gallery-3-original.jpg"/>
+<div class="zoom" id="zoom3"></div>
+</div>
+
+<div class="modal">
+    
+<span class="close">x</span>
+<img class="modalImage" id="img01" />
+
+</div>
+<script>
+var modalEle = document.querySelector(".modal");
+var zoom = document.querySelector('.zoom');
+var modalImage = document.querySelector(".modalImage");
+
+Array.from(document.querySelectorAll(".gallery__img")).forEach(item => {
+   item.addEventListener("click", event => {
+      modalEle.style.display = "block";
+      document.body.style.overflow = "hidden";
+      modalImage.src = event.target.src;
+      if(event.target == zoom1){
+        modalImage.src = "./gallery-1-original.jpg";
+      }else if(event.target == zoom2){
+        modalImage.src = "./gallery-2-original.jpg";
+      }else if(event.target == zoom3){
+        modalImage.src = "./gallery-3-original.jpg";
+      }
+   });
+});
+document.querySelector(".close").addEventListener("click", () => {
+   modalEle.style.display = "none";
+   document.body.style.overflow = "scroll";
+});
+</script>
+</body>
+</html>

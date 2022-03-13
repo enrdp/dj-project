@@ -1,0 +1,31 @@
+#elapsed-container{
+    width: 70%;
+    height: 3px;
+    border-radius: 3px;
+    background: grey;
+  }
+  .audio{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 80%;
+  }
+  #elapsed{
+    width: 0;
+    height: 100%;
+    background: #fff;
+  }
+  .play{
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left: 15px solid black;
+  }
+  .pause{
+  width: 30px;
+  height: 25px;
+  border-style: double;
+  border-width: 0px 0px 0px 20px;
+  border-color: #202020;
+  }

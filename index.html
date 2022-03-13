@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="./carousel/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./carousel/assets/owlcarousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- javascript -->
+    <script src="./carousel/assets/vendors/jquery.min.js"></script>
+    <script src="./carousel/assets/owlcarousel/owl.carousel.js"></script>
+
+
+    <title>Project dj</title>
+</head>
+
+<body>
+  <header class="header-main">
+  <nav class="menu" id="menu">
+    <div class="menu-hamburger" id="menu-hamb">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </div>
+
+    <div class="divLogo">
+    <img class="logo" src="./images/logo.png" width="158" height="35"/>
+  </div>
+    <div class="block_right" id="menu__drop">
+        <nav class="nav_menu noShow" id="nav_menu">
+            <div class="menu__sub" id="menu__sub">
+
+              <a href="#"><li class="menu__drop_item">HOME</li></a>
+              <a href="#"><li class="menu__drop_item">CONTACT</li></a>
+              <a href="#"><li class="menu__drop_item">ABOUT US</li></a>
+            </div>
+
+        <ul class="menu__drop">
+            
+        <li class="menu__drop_item"><a href="#">ABOUT</a></li>
+        <li class="menu__drop_item"><a href="#">DISCOGRAPHY</a></li>
+        <li class="menu__drop_item"><a href="#">TOURS</a></li>
+        <li class="menu__drop_item"><a href="#">PHOTOS</a></li>
+    </ul>
+</nav>
+    <ul class="menu__drop-social noShow" id="icon__social">
+      <a href="#"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+      <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+      <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+      <a href="#"><li><i class="fa-brands fa-pinterest-p"></i></li></a>
+      <a href="#"><li><i class="fa-brands fa-youtube"></i></li></a>
+    </ul>
+</div>
+   
+    <div class="menu-circle" id="menu-circle">
+        <span class="circle circle1"></span>
+        <span class="circle circle2"></span>
+        <span class="circle circle3"></span>
+    
+</div>
+</nav>
+
+    <div class="header-main-text">
+       <h2 class="header-main-h2"> New Single</h2>
+       <h1>Feel the Rhythm</h1>
+       <div class="audio">
+        <div id="play" class="play"></div>
+    <div id="elapsed-container">
+        <div id="elapsed"></div>
+        
+      </div>
+      <div class="audioTime">
+      <span id="aNow"></span><span>-</span><span id="aTime"></span>
+    </div>
+    </div>
+      </div>
+        <div class="countdown__container">
+          <div class="countdown">
+            <div class="countdown__text">
+          <h2 class="gig">Next Gig</h2>
+          <p>Tickets for my next event are already available.</p>
+        </div>
+      <div id="countdown" class="timer"></div>
+      
+      <a href="#"><button class="tickets_button">BUY TICKETS</button></a>
+    
+      </div>
+  </div>
+  
+      </header>
+      
+    
+
+<!--Section: about-->
+<section class="about">
+  <figure class="about__img">
+    <img src="./images/home-dj.jpg" alt="Dj Angerone">
+  </figure>
+    <div class="about__text"> 
+    <h3>About DJ Angerone</h3>
+    <p>Mike Myers professionally known as DJ Angerone, is internationally acclaimed Progressive house & Trance DJ & musician.</p>
+    <blockquote>I try to experiment with various music genres in every track that I make. </blockquote>
+    <p>Since the beginning of his career in 2010, he has already released 5 EPs on a range of 
+    worldwide known labels (Booster Records, DSTRCT Recordings etc.) and received a number of music awards.</p>
+  </div>
+  </section>
+
+<!--Section: discography-->
+<section class = "discography">
+    <h3>Listen to the Latest Releases by DJ Angerone</h3>
+    <button class = "discography__button">VIEW DISCOGRAPHY</button>
+</section>
+
+<!--Section: Latest Releases-->
+<section class="releases">
+  <h2>Latest Releases</h2>
+  <p>
+      Here are the most recent singles, EPs, and other releases that DJ Angerone has worked on. 
+      You can stream and buy them on our website and a variety of digital stores.
+  </p>
+  <div class="release__cover-container">
+  <article class="release__cover release__cover-first">
+      <img src="./images/dicography-album-cover-1.jpg" alt="intense">
+      <h3>Intense</h3>
+      <p>2019</p>
+  </article>
+  <article class="release__cover">
+      <img src="./images/dicography-album-cover-2.jpg" alt="myspace">
+      <h3>My Space</h3>
+      <p>2019</p>
+  </article>
+  <article class="release__cover">
+      <img src="./images/dicography-album-cover-3.jpg" alt="trance">
+      <h3>Trance Mix Year</h3>
+      <p>2018</p>
+  </article>
+</div>
+</section>
+
+<!--Section: fanbase-->
+<section class="fanbase">
+    <!--Position absolute when scroll: position change...-->
+    <article class="fanbase__img">
+        <div><img src="./images/fanbase-1.jpg" alt=""></div>
+        <div><img src="./images/fanbase-2.jpg" alt=""></div>
+        <div><img src="./images/about-us-dj-img.jpg" alt=""></div>
+        <div><img src="./images/fanbase-3.jpg" alt=""></div>
+        <div><img src="./images/fanbase-5.jpg" alt=""></div>
+        <div><img src="./images/fanbase-6.jpg" alt=""></div>
+    </article>
+
+    <!--Join the fan base-->
+    <article class="fanbase__join">
+        <h3>Join the Fanbase</h3>
+        <p class="fan-left">
+            Take your chance to join DJ Angerone’s fan club to receive exclusive tracks, 
+            free downloads, and other great offers.
+        </p>
+    </article>
+    <article class="fanbase__article">
+        <img src="./images/logo2.png" class ="png" alt=""> <!--icon-->
+        <h4>Exclusive Releases</h4>
+        <p>
+            Get access to unreleased albums and EPs before they are published.
+        </p>
+    </article>
+    <article class="fanbase__article">
+        <img src="./images/600px-Energia_ball_logo_png.png" class="png" alt=""> <!--icon-->
+        <h4>Full DJ Sets & Podcasts</h4>
+        <p>
+            Listen and download full sets and podcasts with tracklists by DJ Angerone.
+        </p>
+    </article>
+    <article class="fanbase__article">
+        <img src="./images/python.png" class ="png" alt=""> <!--icon-->
+        <h4>Free Downloads</h4>
+        <p>
+            Free tracks and remixes are regularly published for DJ Angerone’s fan club.
+        </p>
+    </article>
+</section>
+    
+<!--Section: Tour-->
+<article class="main__tourSchedule">
+  <h2>Tour Schedule</h2>
+  <div class="main__tourSchedule__calendar">
+      <ul class="main__tourSchedule__calendar__list">
+          <a href="#zero" class="button secondary url active_calendar">MARCH</a>
+          <a href="#one" class="button secondary url">APRIL</a>
+          <a href="#two" class="button secondary url">MAY</a>
+      </ul>
+  </div>
+
+  <div class="owl-carousel owl-theme owl-carousel_tour">
+
+  
+    <div class="march main__tourSchedule__news" data-hash="zero">
+      <ul class="news1">
+          <li class="active" id="news1item1" onclick="changeHeight('79%')">
+              <p class="date">March 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item2" onclick="changeHeight('79%')">
+              <p class="date">March 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item3" onclick="changeHeight('79%')">
+              <p class="date">March 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news1item4" onclick="changeHeight('70%')">
+              <p class="date">March 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+
+
+    <div class="april main__tourSchedule__news" data-hash="one">
+      <ul class="news2">
+          <li class="active" id="news2item1" onclick="changeHeight('79%')">
+              <p class="date">April 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item2" onclick="changeHeight('79%')">
+              <p class="date">April 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item3" onclick="changeHeight('79%')">
+              <p class="date">April 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news2item4" onclick="changeHeight('70%')">
+              <p class="date">April 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="may main__tourSchedule__news" data-hash="two">
+      <ul class="news3">
+          <li class="active" id="news3item1" onclick="changeHeight('79%')">
+              <p class="date">May 13, 2022</p>
+              <h3>Encore Beach Club, Las Vegas</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item2" onclick="changeHeight('79%')">
+              <p class="date">May 21, 2022</p>
+              <h3>Soundscape Weekender Festival, Coventry</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item3" onclick="changeHeight('79%')">
+              <p class="date">May 25, 2022</p>
+              <h3>Barcelona Beach Festival, Barcelona</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+          <li id="news3item4" onclick="changeHeight('70%')">
+              <p class="date">May 29, 2022</p>
+              <h3>Barclaycard Arena, Hamburg</h3>
+              <p class="newsText">DJ Angeron will visit one of the most famous night clubs in Las Vegas in April to play his latest tracks and the greatest trance hits as a part of his US tour.</p>
+              <a href="#">BUY TICKETS >></a>
+          </li>
+      </ul>
+    </div>
+ </div>
+
+</article>
+
+
+
+
+
+<!--Section: Sponsor-->
+<div class="owl-carousel__container">
+        <h2 class="partner">Partners & Sponsors</h2>
+      <div class="owl-carousel owl-theme owl-carousel_sponsor">
+        <div class="item item1">
+          <img src="./images/logo-inverse-1-143x69.png" alt="" width="143" height="69">
+        </div>
+        <div class="item item2">
+          <img src="./images/logo-inverse-2-117x78.png" alt="" width="117" height="78">
+        </div>
+        <div class="item itemMarg1">
+          <img src="./images/logo-inverse-3-205x36.png" alt="" width="205" height="36">
+        </div>
+        <div class="item itemMarg2">
+          <img src="./images/logo-inverse-4-171x58.png" alt="" width="171" height="58">
+        </div>
+        <div class="item item5">
+          <img src="./images/logo-inverse-1-143x69.png" alt="" width="143" height="69">
+        </div>
+        <div class="item item6">
+          <img src="./images/logo-inverse-2-117x78.png" alt="" width="117" height="78">
+        </div>
+        <div class="item itemMarg1">
+          <img src="./images/logo-inverse-3-205x36.png" alt="" width="205" height="36">
+        </div>
+        <div class="item itemMarg2">
+          <img src="./images/logo-inverse-4-171x58.png" alt="" width="171" height="58">
+        </div>
+      </div>
+</div>
+
+
+<section class="tickets">
+    <h2 class="tickets_carousel">Tickets</h2>
+          <div class="owl-carousel owl-theme owl-carousel_price">
+            <div class="item_price item1_price">
+                <h2> BASIC </h2>
+                <div class="price">
+                <span class="spanDollar">$</span>
+                <p class="price__dollar">50</p>
+              </div>
+                    <ul class="event">
+                    <li>1 Events</li>
+                <li>Basic Access</li>
+            <li>Club Events Only</li>
+        <li>Free Snacks</li>
+    </ul>
+    <a href="#"><button class="buyNow">BUY NOW</button></a>
+            </div>
+            <div class="item_price item2_price">
+              <h2> STANDARD </h2>
+              <div class="price">
+              <span class="spanDollar">$</span>
+              <p class="price__dollar">80</p>
+            </div>
+                  <ul class="event">
+                  <li>3 Events</li>
+              <li>Extended Access</li>
+          <li>Club & Beach Events</li>
+      <li>Free Snacks & Merch</li>
+  </ul>
+  <a href="#"><button class="buttonActive">BUY NOW</button></a>
+            </div>
+            <div class="item_price item3_price">
+                <h2> GOLD </h2>
+                <div class="price">
+                <span class="spanDollar">$</span>
+                <p class="price__dollar">120</p>
+              </div>
+                    <ul class="event">
+                    <li>5+ Events</li>
+                <li>Unlimited Access</li>
+            <li>All Events</li>
+        <li>Free Accommodation</li>
+    </ul>
+    <a href="#"><button class="buyNow">BUY NOW</button></a>
+            </div>
+            
+          </div>
+
+</section>
+
+<section class="grid-container">
+
+  <div class="gallery__img">
+    <img class="ImgThumbnail" src="./images/gallery-1-original.jpg" alt="">
+    <div class="zoom" id="zoom1"></div>
+  </div>
+
+  <div class="gallery__img">
+    <img class="ImgThumbnail" src="./images/gallery-3-original.jpg" alt="">
+    <div class="zoom" id="zoom2"></div>
+  </div>
+
+  <div class="gallery__img">
+    <img class="ImgThumbnail" src="./images/gallery-2-original.jpg" alt="">
+    <div class="zoom" id="zoom3"></div>
+  </div>
+
+  <div class="gallery__img">
+    <img class="ImgThumbnail" src="./images/gallery-4-original.jpg" alt="">
+    <div class="zoom" id="zoom4"></div>
+  </div>
+  <div class="gallery__img">
+    <img class="ImgThumbnail" src="./images/gallery-12-original.jpg" alt="">
+    <div class="zoom" id="zoom5"></div>
+  </div>
+
+  <div class="modal">
+    <span class="close">x</span>
+    <img class="modalImage" id="img01" />
+    </div>
+
+</section>
+
+  
+
+
+
+    <div class="container__carousel-recent" id="carousel-recent">
+        <h2 class="news">Recent News</h2>
+      <div class="owl-carousel owl-theme owl-carousel_recent">
+        <div class="item_recent item1_recent">
+            <span>Sep 22, 2019</span>
+            
+            <h4>New Single “Feel the Rhythm” is Already Available!</h4>
+
+            <p> Angerone’s new single “Feel The Rhythm” is already released via Divergence
+
+            Records and it’s now available for streaming and downloading...</p>
+            
+            <div class="arrow_recent">
+                <a href="#">Read More</a>
+             
+<svg id="more-arrows">
+    <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+    <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+    <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+  </svg></div>
+
+        </div>
+        <div class="item_recent item2_recent">
+            <span>Sep 22, 2019</span>
+            
+            <h4>New Single “Feel the Rhythm” is Already Available!</h4>
+
+            <p> Angerone’s new single “Feel The Rhythm” is already released via Divergence
+
+            Records and it’s now available for streaming and downloading...</p>
+            <div class="arrow_recent">
+                <a href="#">Read More</a>
+                <svg id="more-arrows">
+                    <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                    <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                    <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                  </svg>
+                </div>
+            
+        </div>
+        <div class="item_recent item3_recent">
+            <span>Jul 02, 2019</span>
+            
+            <h4>3 New Tour Locations <br>Announced</h4>
+
+            <p> We are glad to share with you the recent information about three new 
+                locations of DJ Angerone’s “Subliminal Tour”...</p>
+                
+                <div class="arrow_recent">
+                   
+                    <a href="#">Read More</a>
+                    <svg id="more-arrows">
+                        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                      </svg>
+                    </div>
+        </div>
+        <div class="item_recent item4_recent">
+            <span>Aug 02, 2019</span>
+            
+            <h4>Top 10 Remixes and Collaborations by DJ Angerone</h4>
+
+            <p> As one of the most prominent House/Trance DJs and musicians, 
+                DJ Angerone has released a lot of great tracks. But what do you know 
+                about his...</p>
+
+                <div class="arrow_recent">
+                    <a href="#">Read More</a>
+                    <svg id="more-arrows">
+                        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                      </svg></div>
+        </div>
+        <div class="item_recent item5_recent">
+            <span>Sep 22, 2019</span>
+            
+            <h4>Angerone Podcast: Episode 054 (feat. Danny Lee)</h4>
+
+            <p> DJ Angerone is glad to present you a new episode of the Angerone Podcast 
+                that features an exclusive one-hour mix by Danny Lee, a resident of...</p>
+
+                <div class="arrow_recent">
+                    <a href="#">Read More</a>
+                    <svg id="more-arrows">
+                        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                      </svg></div>
+        </div>
+        <div class="item_recent item6_recent">
+            <span>Oct 12, 2019</span>
+            
+            <h4>DJ Angerone Gets “The Best EDM Release” Award</h4>
+
+            <p> Yesterday, DJ Angerone has visited WMM Music Awards ceremony and was 
+                awarded with “The Best EDM Release” award for “Feel The Rhythm”...</p>
+
+                <div class="arrow_recent">
+                    <a href="#">Read More</a>
+                    <svg id="more-arrows">
+                        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                      </svg></div>
+        </div>
+        <div class="item_recent item7_recent">
+            <span>Nov 01, 2019</span>
+            
+            <h4>Teasing a New House Track featuring Jetpack Boyz</h4>
+
+            <p> DJ Angerone and Jetpack Boyz have united once again to bring you a special 
+                collaboration, which will be released on Anima Records next...</p>
+
+                <div class="arrow_recent">
+                    <a href="#">Read More</a>
+                    <svg id="more-arrows">
+                        <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+                        <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+                        <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+                      </svg></div>
+        </div>
+    </div>
+      </div>
+
+<section class="subscribe">
+    <h2>Subscribe to Stay Informed</h2>
+    
+    <form action="">
+        <input type="text" name="email" placeholder="Your E-mail">
+        <button class="subscribe__button">SUBSCRIBE</button>
+    </form>
+    
+  
+</section>
+<footer>
+    <img src="./images/logo.png" alt="">
+    <ul class="footer__menu">
+      <a href="#"><li>ABOUT</li></a>
+        <a href="#"><li>DISCOGRAPHY</li></a>
+        <a href="#"><li>TOURS</li></a>
+        <a href="#"><li>PHOTOS</li></a>
+    </ul>
+    <ul class="icons">
+        <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+        <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+        <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+        <a href="#"><li><i class="fa-brands fa-youtube"></i></li></a>
+        <a href="#"><li><i class="fa-brands fa-pinterest"></i></li></a>
+    </ul>
+    <p>© 2021 DJ Angerone. Privacy Policy.</p>
+</footer>
+<div id="scrollToTopBtn"><span class="ScrollArrow"></span></div>
+
+<script src="./carousel/assets/vendors/highlight.js"></script>
+<script src="./carousel/assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+    $('.owl-carousel_sponsor').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: true,
+          loop: false,
+          margin: 10
+        }
+      }
+    })
+  })
+</script>
+<script>
+    $(document).ready(function() {
+      $('.owl-carousel_price').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 10
+          }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel_recent').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 10
+          }
+        }
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel_tour').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        URLhashListener:true,
+        startPosition: 'URLHash',
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: false,
+            
+          }
+        }
+      })
+    })
+  </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/countdown.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/audio.js"></script>
+  <script src="./js/tour_section.js"></script>
+  <script src="./js/zoom.js"></script>
+
+</body>
+</html>
