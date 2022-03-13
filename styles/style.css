@@ -194,7 +194,7 @@ opacity: .25;
 .fanbase p {
   color: white;
   font-size: 0.8rem;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 .fanbase h4 {
@@ -946,7 +946,41 @@ footer ul{
   width: 100%;
 }
 }
+.aboutDjimg{
+  width: 40%;
+height: 65%;
+  }
 @media only screen and (min-width:800px){
+  .fanbase__article-section{
+    text-align: center;
+  }
+  .fanbase__article{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .fanbase__article-text{
+    width: 50%;
+  }
+  .fanbase__article1{
+    flex:50%;
+  }
+  .fanbase__article-section{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  .fanbase__img{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+  }
+  .fanbase__img div{
+    flex:50%;
+  }
+  .fanbase p{
+    padding-bottom: 0;
+  }
   .gallery__img{
     display: flex;
     flex-direction: row;
@@ -1949,6 +1983,18 @@ ul{
 }
 }
 @media screen and (min-width: 1024px) {
+  .fanbase__img{
+    flex:50%;
+  }
+  .fanbase__join-section{
+    flex:50%;
+  }
+  .fanbase__article1 {
+    flex: inherit;
+  }
+  .fanbase{
+    flex-direction: row;
+  }
 
   .subscribe form {
     width: 60%;
