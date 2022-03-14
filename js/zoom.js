@@ -5,7 +5,7 @@ let modalImage = document.querySelector(".modalImage");
 Array.from(document.querySelectorAll(".gallery__img")).forEach(item => {
    item.addEventListener("click", event => {
       modalEle.style.display = "block";
-      document.body.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
       modalImage.src = event.target.src;
       document.getElementById('scrollToTopBtn').style.zIndex = "0";
       document.getElementById('menu').style.zIndex = "0";
@@ -26,5 +26,5 @@ document.querySelector(".close").addEventListener("click", () => {
    modalEle.style.display = "none";
    document.getElementById('scrollToTopBtn').style.zIndex = "900";
    document.getElementById('menu').style.zIndex = "999";
-   document.body.style.overflow = "scroll";
+   document.body.style.overflowY = "scroll";
 });
